@@ -8,21 +8,72 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="http://ryannathanwilson.me">
-              <img src="images/plane.png" height="30" id="icon" class="d-inline-block align-top" alt="RNW Logo">
-              Ryan N Wilson
-            </a>
-          </nav>
-
-        <div class="title">
-            <h1>Hi Teacup!</h1>
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/plane.png" height="30" id="icon" class="d-inline-block align-top" alt="RNW Logo">
+                    Ryan N Wilson
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div id="profile">
-            <img src="images/profile.jpeg" alt="profile picture" style="max-width: 100%;">
+    </header>
+    <div id="page">
+        <div class="container">
+            <div class="row">
+                <div id="profile" class="col-md-6 col-sm-12">
+                    <img src="images/profile.jpeg" alt="profile picture" style="max-width: 100%;">
+                </div>
+                <div id="content" class="col-md-6 col-sm-12">
+                    <h1>Hi Teacup!</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim beatae eaque harum aliquam minus. Ipsum hic unde possimus dolore! Perspiciatis incidunt voluptas inventore quod facere recusandae dignissimos voluptates neque. Sunt.</p>
+                </div>
+            </div>
         </div>
     </div>
+    <footer id="footer">
+        <div class="container">
+            <!-- <div class="navbar"> -->
+                <ul class="nav">
+                    <li class="nav-item">&#169; 2020 Ryan N Wilson</li>
+                    <li class="nav-item"><a href="github.io/ryannathanwilson">My Github</a></li>
+                    <li class="nav-item">C</li>
+                    <li class="nav-item">D</li>
+                    <li class="nav-item">E</li>
+                </ul>
+            <!-- </div> -->
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
+
+<!-- Need 4 pages
+one list 
+one table 
+one image 
+mobile responsive
+bootstrap grid 
+scss nesting
+scss inheritance
+include a readme.md 
+manage footer sticking correctly-->

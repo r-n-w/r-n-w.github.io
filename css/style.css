@@ -1,23 +1,78 @@
-.title {
-  position: relative;
-  color: green;
-  z-index: 10;
+#header, #footer {
+  border: solid 1px #b4b4b4;
+}
+
+@media only screen and (max-width: 768px) {
+  #profile {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #content {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #footer {
+    line-height: 3rem;
+  }
+  #footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #footer {
+    margin-top: -3rem;
+    line-height: 3rem;
+  }
+  #footer ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#header {
+  background-color: #b4b4b4;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  z-index: 1000;
+}
+
+#page {
+  padding: 5rem 0 5rem 0;
+  min-height: 100%;
+}
+
+#footer {
+  background-color: #155a00;
+}
+
+#footer li {
+  color: white;
 }
 
 #profile {
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.navbar {
-  z-index: 10;
+  border: 1px grey solid;
 }
 
 #icon {
-  background-color: green;
+  background-color: #155a00;
   border-radius: 5px;
+}
+
+a, a:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
