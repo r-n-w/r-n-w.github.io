@@ -1,6 +1,6 @@
 $color: #155a00;
 $dark: black;
-$middle: #b4b4b4;
+$middle: #666666;
 $light: white;
 $footer-line-height: 3rem;
 
@@ -35,6 +35,8 @@ $footer-line-height: 3rem;
 body,html {
     height: 100%;
     margin: 0;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
 }
 
 #header {
@@ -44,11 +46,21 @@ body,html {
     width: 100%;
     display: block;
     z-index: 1000;
+    span {
+        cursor: default;
+    }
     @extend %borders;
 }
 #page {
     padding: 5rem 0 5rem 0;
     min-height: 100%;
+    a {
+        color: $dark;
+    }
+    a:hover {
+        text-decoration: none;
+        color: $middle;
+    }
 }
 #footer {
     background-color: $color;
@@ -77,8 +89,8 @@ a, a:hover {
     border-radius: 10%;
     text-decoration: none;
 }
-.fa-paper-plane {
-    font-size: 1.5rem;
+.fa-leaf{
+    font-size: 1.25rem;
     color: $dark;
 }
 .fa:hover {
