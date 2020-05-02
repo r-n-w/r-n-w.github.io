@@ -1,4 +1,4 @@
-#header, #footer {
+#header {
   border: solid 1px #b4b4b4;
 }
 
@@ -14,6 +14,7 @@
             order: 1;
   }
   #footer {
+    margin-top: -9rem;
     line-height: 3rem;
   }
   #footer ul {
@@ -63,8 +64,8 @@ body, html {
   color: white;
 }
 
-#profile {
-  border: 1px grey solid;
+#footer .fa {
+  line-height: 3rem;
 }
 
 #icon {
@@ -74,5 +75,47 @@ body, html {
 
 a, a:hover {
   color: white;
+}
+
+.fa {
+  margin-right: .7rem;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  border-radius: 10%;
+  text-decoration: none;
+}
+
+.fa-paper-plane {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.fa:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.my-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project {
+  border: 1px #b4b4b4 solid;
+  border-radius: 5px;
+  margin: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

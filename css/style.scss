@@ -2,6 +2,7 @@ $color: #155a00;
 $dark: black;
 $middle: #b4b4b4;
 $light: white;
+$footer-line-height: 3rem;
 
 %borders {
     border: solid 1px $middle;
@@ -14,7 +15,8 @@ $light: white;
         order: 1;
     }
     #footer {
-        line-height: 3rem;
+        margin-top: -$footer-line-height*3;
+        line-height: $footer-line-height;
         ul {
            flex-direction: column; 
         }
@@ -23,7 +25,7 @@ $light: white;
 @media only screen and (min-width: 769px) {
     #footer {
         margin-top: -3rem;
-        line-height: 3rem;
+        line-height: $footer-line-height;
         ul {
             justify-content: space-between;
         }
@@ -49,14 +51,12 @@ body,html {
 }
 #footer {
     background-color: $color;
-    @extend %borders;
     li {
         color: $light;
     }
-}
-
-#profile {
-border: 1px grey solid;
+    .fa {
+        line-height: $footer-line-height;
+    }
 }
 
 #icon {
@@ -68,4 +68,37 @@ a, a:hover {
     color: $light;
 }
 
+.fa {
+    margin-right: .7rem;
+    font-size: 2rem;
+    text-align: center;
+    color: $light;
+    border-radius: 10%;
+    text-decoration: none;
+}
+.fa-paper-plane {
+    font-size: 1.5rem;
+    color: $dark;
+}
+.fa:hover {
+    color: $dark;
+    text-decoration: none;
+}
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project {
+    // width: 320px;
+    // height: 170px;
+    border: 1px $middle solid;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
 
