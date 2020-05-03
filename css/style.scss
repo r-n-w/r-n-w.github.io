@@ -1,5 +1,5 @@
 $color: #155a00;
-$dark: black;
+$dark: #1b1b1b;
 $middle: #666666;
 $light: white;
 $footer-line-height: 3rem;
@@ -40,7 +40,7 @@ body,html {
 }
 
 #header {
-    background-color: $middle;
+    background-color: $dark;
     position: fixed;
     top: 0;
     width: 100%;
@@ -91,7 +91,7 @@ a, a:hover {
 }
 .fa-leaf{
     font-size: 1.25rem;
-    color: $dark;
+    color: $color;
 }
 .fa:hover {
     color: $dark;
@@ -114,4 +114,6 @@ a, a:hover {
 img {
     width: 100%;
 }
-
+h3 {
+    color: $middle;    
+}
