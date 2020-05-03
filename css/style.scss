@@ -15,6 +15,10 @@ $footer-line-height: 3rem;
     #content {
         order: 1;
     }
+    #page {
+    padding: 5rem 0 10rem 0;
+    }
+
     #footer {
         margin-top: -$footer-line-height*3;
         line-height: $footer-line-height;
@@ -31,6 +35,9 @@ $footer-line-height: 3rem;
             justify-content: space-between;
         }
     }
+    #page {
+        padding: 5rem 0 4rem 0;
+        }
 }
 body,html {
     height: 100%;
@@ -52,7 +59,6 @@ body,html {
     @extend %borders;
 }
 #page {
-    padding: 5rem 0 5rem 0;
     min-height: 100%;
     a {
         color: $dark;
@@ -94,7 +100,7 @@ a, a:hover {
     color: $color;
 }
 .fa:hover {
-    color: $dark;
+    color: $color;
     text-decoration: none;
 }
 .my-row {
@@ -134,11 +140,26 @@ h3 {
     width: 0;
     height: 0;
     margin-left: .255em;
-    vertical-align: .255em;
+    // vertical-align: .255em;
     content: "";
     border-top: .3em solid;
     border-right: .3em solid transparent;
     border-bottom: 0;
     border-left: .3em solid transparent;
-
+}
+.sunrise {
+    min-height: 100vh;
+    background-image: url("../images/profile_sunrise.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    
+    // max-width: 900px;
+    // position: relative;
+    // display: block;
+    // filter: grayscale(1);
+    // -webkit-transform: scaleX(1);
+    // transform: scaleX(1);
+    // z-index: -1;
+    
 }

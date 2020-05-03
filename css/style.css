@@ -14,6 +14,9 @@
         -ms-flex-order: 1;
             order: 1;
   }
+  #page {
+    padding: 5rem 0 10rem 0;
+  }
   #footer {
     margin-top: -9rem;
     line-height: 3rem;
@@ -35,6 +38,9 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  #page {
+    padding: 5rem 0 4rem 0;
   }
 }
 
@@ -59,7 +65,6 @@ body, html {
 }
 
 #page {
-  padding: 5rem 0 5rem 0;
   min-height: 100%;
 }
 
@@ -108,7 +113,7 @@ a, a:hover {
 }
 
 .fa:hover {
-  color: #1b1b1b;
+  color: #155a00;
   text-decoration: none;
 }
 
@@ -159,11 +164,18 @@ h3 {
   width: 0;
   height: 0;
   margin-left: .255em;
-  vertical-align: .255em;
   content: "";
   border-top: .3em solid;
   border-right: .3em solid transparent;
   border-bottom: 0;
   border-left: .3em solid transparent;
+}
+
+.sunrise {
+  min-height: 100vh;
+  background-image: url("../images/profile_sunrise.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
 }
 /*# sourceMappingURL=style.css.map */
