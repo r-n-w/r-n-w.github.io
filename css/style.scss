@@ -35,6 +35,9 @@ $footer-line-height: 3rem;
             justify-content: space-between;
         }
     }
+    .sunrise {
+        max-width: 991px;
+    }
     #page {
         padding: 5rem 0 4rem 0;
         }
@@ -148,7 +151,7 @@ h3 {
     border-left: .3em solid transparent;
 }
 .sunrise {
-    min-height: 100vh;
+    min-height: 80vh;
     background-image: 
     linear-gradient(white, white),
     url("../images/profile_sunrise.png");
@@ -157,12 +160,5 @@ h3 {
     background-size: contain;
     background-blend-mode: saturation;
     
-    // max-width: 900px;
-    // position: relative;
-    // display: block;
-    // filter: grayscale(1);
-    // -webkit-transform: scaleX(1);
-    // transform: scaleX(1);
-    // z-index: -1;
     
 }

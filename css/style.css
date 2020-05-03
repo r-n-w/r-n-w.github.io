@@ -39,6 +39,9 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .sunrise {
+    max-width: 991px;
+  }
   #page {
     padding: 5rem 0 4rem 0;
   }
@@ -172,7 +175,7 @@ h3 {
 }
 
 .sunrise {
-  min-height: 100vh;
+  min-height: 80vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), url("../images/profile_sunrise.png");
   background-image: linear-gradient(white, white), url("../images/profile_sunrise.png");
   background-repeat: no-repeat;
