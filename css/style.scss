@@ -149,10 +149,13 @@ h3 {
 }
 .sunrise {
     min-height: 100vh;
-    background-image: url("../images/profile_sunrise.png");
+    background-image: 
+    linear-gradient(white, white),
+    url("../images/profile_sunrise.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    background-blend-mode: saturation;
     
     // max-width: 900px;
     // position: relative;
