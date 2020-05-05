@@ -124,19 +124,31 @@ img {
     width: 100%;
 }
 h3 {
-    color: $middle;    
+    color: $middle; 
+    margin-top: 1rem;   
 }
 
 .bullet-dropdown {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     font-size: 1.25rem;
-    height: 3rem;
-    line-height: 3rem;
+    // height: 4rem;
     border-bottom: 1px solid $middle;
-
+    cursor: pointer;
 }
-.bullet-dropdown::after {
+.text {
+    // line-height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.subtext {
+    display: flex;
+    justify-content: space-between;
+    font-size: .7rem;
+    color: $middle;
+}
+.text::after {
     display: block;
     margin-top: 1.5rem;
     margin-right: 1rem;
@@ -149,6 +161,9 @@ h3 {
     border-right: .3em solid transparent;
     border-bottom: 0;
     border-left: .3em solid transparent;
+}
+.bullet-dropdown:hover {
+    color: $middle;
 }
 .sunrise {
     min-height: 80vh;
