@@ -10,7 +10,9 @@ $footer-line-height: 3rem;
 @media only screen and (max-width: 768px) {
     #profile {
         order: 2;
-        margin-bottom: 5rem;
+        img {
+            width: 100%;
+        }
     }
     #content {
         order: 1;
@@ -27,6 +29,14 @@ $footer-line-height: 3rem;
     }
 }
 @media only screen and (min-width: 769px) {
+    #profile {
+        max-height: 80vh;
+        img {
+            max-height: 100%;
+            display: block;
+            margin: auto;
+        }
+    }
     #footer {
         margin-top: -3rem;
         line-height: $footer-line-height;
@@ -82,13 +92,9 @@ body,html {
     .fa {
         line-height: $footer-line-height;
     }
-}
-#icon {
-    background-color: $color;
-    border-radius: 5px;
-}
-a, a:hover {
-    color: $light;
+    .fa:hover {
+        color: $dark;
+    }
 }
 .fa {
     margin-right: .7rem;
@@ -103,29 +109,17 @@ a, a:hover {
     color: $color;
 }
 .fa:hover {
-    color: $color;
     text-decoration: none;
 }
-.my-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 .project {
-    // width: 320px;
-    // height: 170px;
     border: 1px $middle solid;
     border-radius: 5px;
     margin: 10px;
     overflow: hidden;
     padding: 0;
 }
-img {
+.preview {
     width: 100%;
-}
-h3 {
-    color: $middle; 
-    margin-top: 1rem;   
 }
 .bullet-dropdown {
     display: flex;
@@ -169,4 +163,8 @@ h3 {
     background-position: bottom;
     background-size: contain;
     background-blend-mode: saturation;  
+}
+.section-head {
+    color: $middle;
+    margin-top: 1rem;
 }
