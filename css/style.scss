@@ -34,11 +34,16 @@ $footer-line-height: 3rem;
             justify-content: space-between;
         }
     }
+    #content {
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 0 5px 0 $middle;
+        padding: 2rem 1rem 1rem 1rem;
+    }
     .sunrise {
         max-width: 991px;
     }
     #page {
-        padding: 5rem 0 4rem 0;
+        padding: 3rem 0 4rem 0;
     }   
 }
 body,html {
