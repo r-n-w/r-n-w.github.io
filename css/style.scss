@@ -16,6 +16,7 @@ $footer-line-height: 3rem;
     }
     #content {
         order: 1;
+        background-color: #ffffffe1;
     }
     #page {
     padding: 5rem 0 10rem 0;
@@ -48,6 +49,7 @@ $footer-line-height: 3rem;
         border-radius: 0 0 10px 10px;
         box-shadow: 0 0 5px 0 $middle;
         padding: 2rem 1rem 1rem 1rem;
+        background-color: #ffffffe1;
     }
     .sunrise {
         max-width: 991px;
@@ -155,14 +157,22 @@ body,html {
     color: $middle;
 }
 .sunrise {
-    min-height: 80vh;
+    display: block;
+    position: absolute;
+    bottom: 3rem;
+    right: 0;
+    height: 100vh;
+    width: 100vh;
     background-image: 
-    linear-gradient(white, white),
-    url("../images/profile_sunrise.png");
+    linear-gradient(white,white),
+    url("../images/profile_sunrise.png"),
+    linear-gradient(to right, #ffffff00, #ffffff 75%);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-    background-blend-mode: saturation;  
+    background-blend-mode: saturation;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);  
 }
 .section-head {
     color: $middle;
