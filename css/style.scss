@@ -43,10 +43,7 @@ $footer-line-height: 3rem;
     #page {
         padding: 5rem 0 4rem 0;
     }
-    .subtext > :first-child::after {
-        content: ": ";
-        white-space: pre;
-    }
+    
 }
 body,html {
     height: 100%;
