@@ -45,6 +45,10 @@
   #page {
     padding: 5rem 0 4rem 0;
   }
+  .subtext > :first-child::after {
+    content: ": ";
+    white-space: pre;
+  }
 }
 
 body, html {
@@ -177,9 +181,6 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   font-size: .7rem;
   color: #666666;
 }

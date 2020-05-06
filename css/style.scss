@@ -18,12 +18,14 @@ $footer-line-height: 3rem;
     #page {
     padding: 5rem 0 10rem 0;
     }
-
+    .subtext {
+        // flex-direction: column;
+    }
     #footer {
         margin-top: -$footer-line-height*3;
         line-height: $footer-line-height;
         ul {
-           flex-direction: column; 
+            flex-direction: column; 
         }
     }
 }
@@ -40,7 +42,11 @@ $footer-line-height: 3rem;
     }
     #page {
         padding: 5rem 0 4rem 0;
-        }
+    }
+    .subtext > :first-child::after {
+        content: ": ";
+        white-space: pre;
+    }
 }
 body,html {
     height: 100%;
@@ -144,7 +150,6 @@ h3 {
 }
 .subtext {
     display: flex;
-    justify-content: space-between;
     font-size: .7rem;
     color: $middle;
 }
