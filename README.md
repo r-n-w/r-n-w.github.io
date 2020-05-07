@@ -18,3 +18,5 @@ GENERAL:
 - Would be nice to be one long scrolling website
 
 First page is about me unofficially, and then Projects, Resume, Contact
+
+It's reconnected!
