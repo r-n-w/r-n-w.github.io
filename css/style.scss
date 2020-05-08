@@ -18,9 +18,9 @@ $footer-line-height: 3rem;
         order: 1;
         background-color: #ffffffe1;
     }
-    #page {
-    padding: 5rem 0 10rem 0;
-    }
+    // #page {
+    // padding: 5rem 0 10rem 0;
+    // }
     #footer {
         margin-top: -$footer-line-height*3;
         line-height: $footer-line-height;
@@ -29,6 +29,12 @@ $footer-line-height: 3rem;
         }
     }
 }
+.page {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 3rem;
+}
+
 @media only screen and (min-width: 769px) {
     #profile {
         max-height: 80vh;
@@ -46,7 +52,8 @@ $footer-line-height: 3rem;
         }
     }
     #content {
-        border-radius: 0 0 10px 10px;
+        margin-top: 5rem;
+        border-radius:10px;
         box-shadow: 0 0 5px 0 $middle;
         padding: 2rem 1rem 1rem 1rem;
         background-color: #ffffffe1;
@@ -54,11 +61,12 @@ $footer-line-height: 3rem;
     .sunrise {
         max-width: 991px;
     }
-    #page {
-        padding: 3rem 0 4rem 0;
-    }   
+    // #page {
+    //     padding: 3rem 0 4rem 0;
+    // }   
 }
 body,html {
+    scroll-behavior: smooth;
     height: 100%;
     margin: 0;
     -webkit-font-smoothing: auto;
@@ -76,16 +84,16 @@ body,html {
     }
     @extend %borders;
 }
-#page {
-    min-height: 100%;
-    a {
-        color: $dark;
-    }
-    a:hover {
-        text-decoration: none;
-        color: $middle;
-    }
-}
+// #page {
+//     min-height: 100%;
+//     a {
+//         color: $dark;
+//     }
+//     a:hover {
+//         text-decoration: none;
+//         color: $middle;
+//     }
+// }
 #footer {
     background-color: $color;
     li {
@@ -156,24 +164,24 @@ body,html {
 .bullet-dropdown:hover {
     color: $middle;
 }
-.sunrise {
-    display: block;
-    position: absolute;
-    bottom: 9rem;
-    right: 0;
-    height: 100vh;
-    width: 100vh;
-    background-image: 
-    linear-gradient(white,white),
-    url("../images/profile_sunrise.png"),
-    linear-gradient(to right, #ffffff00, #ffffff 75%);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    background-blend-mode: saturation;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);  
-}
+// .sunrise {
+//     display: block;
+//     position: absolute;
+//     bottom: 9rem;
+//     right: 0;
+//     height: 100vh;
+//     width: 100vh;
+//     background-image: 
+//     linear-gradient(white,white),
+//     url("../images/profile_sunrise.png"),
+//     linear-gradient(to right, #ffffff00, #ffffff 75%);
+//     background-repeat: no-repeat;
+//     background-position: bottom;
+//     background-size: contain;
+//     background-blend-mode: saturation;
+//     -webkit-transform: scaleX(-1);
+//     transform: scaleX(-1);  
+// }
 .section-head {
     color: $middle;
     margin-top: 1rem;

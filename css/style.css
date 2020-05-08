@@ -17,9 +17,6 @@
             order: 1;
     background-color: #ffffffe1;
   }
-  #page {
-    padding: 5rem 0 10rem 0;
-  }
   #footer {
     margin-top: -9rem;
     line-height: 3rem;
@@ -30,6 +27,12 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 3rem;
 }
 
 @media only screen and (min-width: 769px) {
@@ -51,7 +54,8 @@
             justify-content: space-between;
   }
   #content {
-    border-radius: 0 0 10px 10px;
+    margin-top: 5rem;
+    border-radius: 10px;
     -webkit-box-shadow: 0 0 5px 0 #666666;
             box-shadow: 0 0 5px 0 #666666;
     padding: 2rem 1rem 1rem 1rem;
@@ -60,12 +64,10 @@
   .sunrise {
     max-width: 991px;
   }
-  #page {
-    padding: 3rem 0 4rem 0;
-  }
 }
 
 body, html {
+  scroll-behavior: smooth;
   height: 100%;
   margin: 0;
   -webkit-font-smoothing: auto;
@@ -83,19 +85,6 @@ body, html {
 
 #header span {
   cursor: default;
-}
-
-#page {
-  min-height: 100%;
-}
-
-#page a {
-  color: #1b1b1b;
-}
-
-#page a:hover {
-  text-decoration: none;
-  color: #666666;
 }
 
 #footer {
@@ -193,23 +182,6 @@ body, html {
 
 .bullet-dropdown:hover {
   color: #666666;
-}
-
-.sunrise {
-  display: block;
-  position: absolute;
-  bottom: 9rem;
-  right: 0;
-  height: 100vh;
-  width: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), url("../images/profile_sunrise.png"), -webkit-gradient(linear, left top, right top, from(#ffffff00), color-stop(75%, #ffffff));
-  background-image: linear-gradient(white, white), url("../images/profile_sunrise.png"), linear-gradient(to right, #ffffff00, #ffffff 75%);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-  background-blend-mode: saturation;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 
 .section-head {

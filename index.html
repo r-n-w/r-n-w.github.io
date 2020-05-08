@@ -15,6 +15,7 @@
         />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <!-- Probably need to add scrollspy -->
     </head>
     <body>
         <header id="header">
@@ -22,7 +23,7 @@
                 <nav class="navbar navbar-expand-md navbar-dark">
                     <a
                         class="navbar-brand d-inline-block align-top"
-                        href="index.html"
+                        href="#home"
                     >
                         <i class="fa fa-leaf"></i>Ryan N Wilson
                     </a>
@@ -40,17 +41,17 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="projects.html">
+                                <a class="nav-link" href="#projects">
                                     Projects
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="resume.html">
+                                <a class="nav-link" href="#resume">
                                     Resume
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">
+                                <a class="nav-link" href="#contact">
                                     Contact Me
                                 </a>
                             </li>
@@ -59,37 +60,228 @@
                 </nav>
             </div>
         </header>
-        <div id="page">
-            <div class="container">
-                <div class="row">
-                    <div id="profile" class="col-md-6 col-sm-12">
-                        <img
-                            src="images/profile_BW.jpeg"
-                            alt="profile picture"
-                        />
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div id="content">
-                            <h1>About</h1>
-                            <hr />
-                            <p>
-                                I'm a front end web developer with a technical
-                                background in Mechanical Engineering and
-                                Industrial Design. I was always one who loved
-                                the intersection of products that had to work
-                                well and be beautiful at the same time. Now I'm
-                                bringing that same skillset into web
-                                development.
-                            </p>
-                            <hr />
-                            <h3><a href="projects.html">Projects</a></h3>
-                            <h3><a href="resume.html">Resume</a></h3>
-                            <h3><a href="contact.html">Contact</a></h3>
+
+        <div id="home" class="page">
+            <div id="page_1">
+                <div class="container">
+                    <div class="row">
+                        <div id="profile" class="col-md-6 col-sm-12">
+                            <img
+                                src="images/profile_BW.jpeg"
+                                alt="profile picture"
+                            />
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div id="content">
+                                <h1>About</h1>
+                                <hr />
+                                <p>
+                                    I'm a front end web developer with a technical
+                                    background in Mechanical Engineering and
+                                    Industrial Design. I was always one who loved
+                                    the intersection of products that had to work
+                                    well and be beautiful at the same time. Now I'm
+                                    bringing that same skillset into web
+                                    development.
+                                </p>
+                                <hr />
+                                <h3><a href="projects.html">Projects</a></h3>
+                                <h3><a href="resume.html">Resume</a></h3>
+                                <h3><a href="contact.html">Contact</a></h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="projects" class="page">
+            <div id="page_2">
+                <div class="container">
+                    <h1>Projects</h1>
+                    <hr>
+                    <div class="row" style="margin-top: 3rem;">
+                        <div id="project 1" class="col-md project">
+                            <a href="https://r-n-w.github.io/rock_paper_scissors">
+                                <img class="preview" src="images/RPS.png" alt="sample website">
+                            </a>
+                        </div>
+                        <div id="project 2" class="col-md project">
+                            <a href="https://r-n-w.github.io/calculator">
+                                <img class="preview" src="images/Calculator.png" alt="sample website">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="project 3" class="col-md project">
+                            <a href="https://r-n-w.github.io/etch_a_sketch">
+                                <img class="preview" src="images/Etch-A-Sketch.png" alt="sample website">
+                            </a>
+                        </div>
+                        <div id="project 4" class="col-md project">
+                            <a href="https://r-n-w.github.io/google">
+                                <img class="preview" src="images/google.png" alt="sample website">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="resume">
+            <div id="page_3" class="page">
+                <div class="sunrise"></div>
+                <div class="container">
+                    <div class="row mt-0">
+                        <div id="content" class="col-md-6 col-sm-12">
+                            <h1>Resume</h1>
+                            <hr>
+                            <h3 class="section-head">Experience</h3>
+                            <div class="bullet-dropdown" data-toggle="collapse" href="#experience1" role="button" aria-expanded="false" aria-controls="experience1">
+                                <div class="text">Seven Cycles</div>
+                                <div class="subtext">
+                                    <div>Design Engineer |&nbsp;</div>
+                                    <div>2013 - Present</div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="experience1">
+                                <div class="pt-3">
+                                    <ul>
+                                        <li>
+                                            Managed numerous R&D projects
+                                            simultaneously, including new product
+                                            development, testing, and manufacturing
+                                            improvements.
+                                        </li>
+                                        <li>
+                                            Initiated company effort to create shorter
+                                            chainstays with more clearance, reducing
+                                            defects and making Seven more competitive in
+                                            the racing market.
+                                        </li>
+                                        <li>
+                                            Created and implemented system which turns
+                                            bicycle frame specifications into a
+                                            production ready technical drawing in
+                                            minutes using Solidworks.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bullet-dropdown" data-toggle="collapse" href="#experience2" role="button" aria-expanded="false" aria-controls="experience2">
+                                <div class="text">PUMA SE</div>
+                                <div class="subtext">
+                                    <div>Footwear Development Intern |&nbsp;</div>
+                                    <div>2011 - 2012</div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="experience2">
+                                <div class="pt-3">
+                                    <ul>
+                                        <li>
+                                            Drove the design and material selection for
+                                            an extensive line of footwear, working with
+                                            teams in Germany and Vietnam to achieve the
+                                            best price points, comfort, aesthetics, and
+                                            durability.
+                                        </li>
+                                        <li>
+                                            Performed research and interviews across the
+                                            company, and created a guide of standard
+                                            best practices for developing performance
+                                            footwear.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bullet-dropdown" data-toggle="collapse" href="#experience3" role="button" aria-expanded="false" aria-controls="experience3">
+                                <div class="text">Vocollect</div>
+                                <div class="subtext">
+                                    <div>Mechanical Engineering Co-op |&nbsp;</div>
+                                    <div>Summer 2010</div>    
+                                </div>
+                            </div>
+                            <div class="collapse" id="experience3">
+                                <div class="pt-3">
+                                    <ul>
+                                        <li>
+                                            Led the development of a drop test fixture
+                                            for testing IP 67 rated rugged computing
+                                            devices.
+                                        </li>
+                                        <li>
+                                            Collaborated with the partner industrial
+                                            design firm on solving technical problems in
+                                            the next generation voice recognition
+                                            computing device.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3 class="section-head">Education</h3>
+                            <div class="bullet-dropdown" data-toggle="collapse" href="#education1" role="button" aria-expanded="false" aria-controls="education1">
+                                <div class="text">M.Eng. Industrial Design</div>
+                                <div class="subtext">
+                                    <div>R.I.T. |&nbsp;</div>
+                                    <div>2013 | GPA 4.0</div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="education1">
+                                <div class="pt-3">
+                                    <ul>
+                                        <li>Simultaneously managed engineering teams designing both a triathlon shoe and pedal, and a flax fiber bicycle from conceptualization and design to functional prototype. All customer objectives were met under budget.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bullet-dropdown" data-toggle="collapse" href="#education1" role="button" aria-expanded="false" aria-controls="education1">
+                                <div class="text">B.S. Mechanical Engineering</div>
+                                <div class="subtext">
+                                    <div>R.I.T. |&nbsp;</div>
+                                    <div>2013 | GPA 3.96</div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="education1">
+                                <div class="pt-3">
+                                    <ul>
+                                        <li>RIT Outstanding Undergraduate Scholar</li>
+                                        <li>Tß∏ Engineering Honor Society</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="contact" class="page">
+            <div id="page_4">
+                <div class="container">
+                    <div class="row">
+                        <div id="content" class="col-sm-12">
+                            <h1>Contact</h1>
+                            <hr>
+                            <p>
+                                For now just reach out on LinkedIn or GitHub until I
+                                have this properly hosted with an email address.
+                            </p>
+                            <a
+                                href="https://github.com/r-n-w"
+                                class="fa fa-github"
+                            ></a>
+                            <a
+                                href="https://www.linkedin.com/in/rnw/"
+                                class="fa fa-linkedin-square"
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
         <footer id="footer">
             <div class="container">
                 <ul class="nav">
@@ -123,6 +315,9 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"
         ></script>
+
         <script src="js/script.js"></script>
     </body>
 </html>
+
+
