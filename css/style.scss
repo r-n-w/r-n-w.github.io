@@ -1,12 +1,15 @@
+// VARIABLES ------------------------------------------>
+
+
 $color: #155a00;
 $dark: #1b1b1b;
 $middle: #666666;
 $light: white;
-$footer-line-height: 3rem;
+$banner-line-height: 3rem;
 
-%borders {
-    border: solid 1px $middle;
-}
+// SMALL SCREEN ------------------------------------------>
+
+
 @media only screen and (max-width: 768px) {
     #profile {
         order: 2;
@@ -14,26 +17,23 @@ $footer-line-height: 3rem;
             width: 100%;
         }
     }
-    #content {
+    #about {
         order: 1;
-        background-color: #ffffffe1;
     }
-    // #page {
-    // padding: 5rem 0 10rem 0;
-    // }
+    .content {
+        background-color: #ffffffe1; 
+    }
     #footer {
-        margin-top: -$footer-line-height*3;
-        line-height: $footer-line-height;
+        margin-top: -$banner-line-height*3;
+        line-height: $banner-line-height;
         ul {
             flex-direction: column; 
         }
     }
 }
-.page {
-    width: 100%;
-    min-height: 100vh;
-    padding-top: 3rem;
-}
+
+// BIG SCREEN ------------------------------------------>
+
 
 @media only screen and (min-width: 769px) {
     #profile {
@@ -44,27 +44,26 @@ $footer-line-height: 3rem;
             margin: auto;
         }
     }
+    .content {
+        margin-bottom: 1rem;
+        border-radius:10px;
+        box-shadow: 0 0 5px 0 $middle;
+        padding: 1rem 1rem 1rem 1rem;
+        background-color: #ffffffe1;
+    }
     #footer {
         margin-top: -3rem;
-        line-height: $footer-line-height;
+        line-height: $banner-line-height;
         ul {
             justify-content: space-between;
         }
     }
-    #content {
-        margin-top: 5rem;
-        border-radius:10px;
-        box-shadow: 0 0 5px 0 $middle;
-        padding: 2rem 1rem 1rem 1rem;
-        background-color: #ffffffe1;
-    }
-    .sunrise {
-        max-width: 991px;
-    }
-    // #page {
-    //     padding: 3rem 0 4rem 0;
-    // }   
 }
+
+
+// UNIVERSAL ------------------------------------------>
+
+
 body,html {
     scroll-behavior: smooth;
     height: 100%;
@@ -82,36 +81,30 @@ body,html {
     span {
         cursor: default;
     }
-    @extend %borders;
-}
-// #page {
-//     min-height: 100%;
-//     a {
-//         color: $dark;
-//     }
-//     a:hover {
-//         text-decoration: none;
-//         color: $middle;
-//     }
-// }
-#footer {
-    background-color: $color;
-    li {
-        color: $light;
-    }
     .fa {
-        line-height: $footer-line-height;
+        font-size: 1.25rem;
+        text-align: center;
+        color: $color;
+        text-decoration: none;
     }
-    .fa:hover {
+}
+.page {
+    max-width: 900px;
+    min-height: 100vh;
+    padding-top: 5rem;
+    margin: auto;
+    a {
         color: $dark;
     }
+    a:hover {
+        color: $middle;
+    }
 }
-.fa {
-    margin-right: .7rem;
-    font-size: 2rem;
-    text-align: center;
-    color: $light;
-    border-radius: 10%;
+
+.m3rem {
+    margin-top: 3rem;
+}
+a:hover {
     text-decoration: none;
 }
 .fa-leaf{
@@ -121,15 +114,26 @@ body,html {
 .fa:hover {
     text-decoration: none;
 }
-.project {
+
+// PROJECT ------------------------------------------>
+
+
+.preview {
     border: 1px $middle solid;
     border-radius: 5px;
     margin: 10px;
     overflow: hidden;
     padding: 0;
+    img {
+        width: 100%;
+    }
 }
-.preview {
-    width: 100%;
+
+// RESUME ------------------------------------------>
+
+.section-head {
+    color: $middle;
+    margin-top: 1rem;
 }
 .bullet-dropdown {
     display: flex;
@@ -138,6 +142,9 @@ body,html {
     font-size: 1.25rem;
     border-bottom: 1px solid $middle;
     cursor: pointer;
+}
+.bullet-dropdown:hover {
+    color: $middle;
 }
 .text {
     display: flex;
@@ -161,28 +168,63 @@ body,html {
     border-bottom: 0;
     border-left: .3em solid transparent;
 }
-.bullet-dropdown:hover {
-    color: $middle;
+
+.sunrise {
+    background-image: 
+    linear-gradient(white,white),
+    url("../images/profile_sunrise.png"),
+    linear-gradient(to right, #ffffff00, #ffffff 75%);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+    background-blend-mode: saturation;
 }
-// .sunrise {
-//     display: block;
-//     position: absolute;
-//     bottom: 9rem;
-//     right: 0;
-//     height: 100vh;
-//     width: 100vh;
-//     background-image: 
-//     linear-gradient(white,white),
-//     url("../images/profile_sunrise.png"),
-//     linear-gradient(to right, #ffffff00, #ffffff 75%);
-//     background-repeat: no-repeat;
-//     background-position: bottom;
-//     background-size: contain;
-//     background-blend-mode: saturation;
-//     -webkit-transform: scaleX(-1);
-//     transform: scaleX(-1);  
-// }
-.section-head {
-    color: $middle;
-    margin-top: 1rem;
+
+// CONTACT ------------------------------------------>
+
+
+#contact {
+    .container {
+        // text-align: center;
+    }
+    .fa-github, .fa-linkedin-square {
+        font-size: 3rem;
+        margin: .5rem;
+        
+    }
+    .icons {
+        text-align: center;;
+        div, i {
+            display: inline-block;
+        }
+    }
+    .fa-leaf {
+        text-align: center;
+        display: inline-block;
+        color: $color;
+        margin: 3rem;
+        font-size: 10rem;
+
+    }
+}
+
+// FOOTER ----------------------------------------->
+
+#footer {
+    background-color: $color;
+    li {
+        color: $light;
+    }
+    .fa {
+        color: $light;
+        line-height: $banner-line-height;
+        font-size: 2rem;
+    }
+    .fa:hover {
+        color: $dark;
+    }
+    .col {
+        text-align: center;
+    }
+   
 }

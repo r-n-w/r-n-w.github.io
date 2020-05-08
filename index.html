@@ -13,20 +13,23 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/style.css" />
-        <!-- Probably need to add scrollspy -->
     </head>
     <body data-spy="scroll" data-target=".navbar" id="home">
+
+
+
+<!---------------------------------HEADER------------------------------------->
+
+
+
         <header id="header">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-dark">
-                    <a
-                        class="navbar-brand d-inline-block align-top"
-                        href="#home"
-                    >
-                        <i class="fa fa-leaf"></i>Ryan N Wilson
+                    <a class="navbar-brand d-inline-block align-top" href="#home">
+                        <i class="fa fa-leaf"></i>
+                        Ryan N Wilson
                     </a>
                     <button
                         class="navbar-toggler"
@@ -62,33 +65,43 @@
             </div>
         </header>
 
-        <div id="home" class="page">
-            <div id="page_1">
+
+
+<!---------------------------------ABOUT------------------------------------->
+
+
+
+        <div id="home">
+            <div id="page_1" class="page">
                 <div class="container">
                     <div class="row">
                         <div id="profile" class="col-md-6 col-sm-12">
-                            <img
-                                src="images/profile_BW.jpeg"
-                                alt="profile picture"
-                            />
+                            <img src="images/profile_BW.jpeg" alt="profile picture" />
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div id="content">
+                        <div id="about" class="col-md-6 col-sm-12">
+                            <div class="content m3rem">
                                 <h1>About</h1>
                                 <hr />
                                 <p>
-                                    I'm a front end web developer with a technical
+                                    "I am a front end web developer with a technical
                                     background in Mechanical Engineering and
                                     Industrial Design. I was always one who loved
                                     the intersection of products that had to work
-                                    well and be beautiful at the same time. Now I'm
+                                    well and be beautiful at the same time. Now I am
                                     bringing that same skillset into web
-                                    development.
+                                    development."
+                                    - Ryan
                                 </p>
                                 <hr />
+
+<!-- DO I WANT THESE LINKS?  THIS PAGE IS KINDA LAME-->
+<!-- 
                                 <h3><a href="projects.html">Projects</a></h3>
                                 <h3><a href="resume.html">Resume</a></h3>
-                                <h3><a href="contact.html">Contact</a></h3>
+                                <h3><a href="contact.html">Contact</a></h3> -->
+
+<!-- TO HERE -->
+
                             </div>
                         </div>
                     </div>
@@ -96,45 +109,58 @@
             </div>
         </div>
 
-        <div id="projects" class="page">
-            <div id="page_2">
+
+
+<!---------------------------------PROJECTS------------------------------------->
+
+
+
+        <div id="projects">
+            <div id="page_2" class="page">
                 <div class="container">
-                    <h1>Projects</h1>
-                    <hr>
-                    <div class="row" style="margin-top: 3rem;">
-                        <div id="project 1" class="col-md project">
-                            <a href="https://r-n-w.github.io/rock_paper_scissors">
-                                <img class="preview" src="images/RPS.png" alt="sample website">
-                            </a>
+                    <div class="content">
+                        <h1>Projects</h1>
+                        <hr>
+                        <div class="row">
+                            <div id="project 1" class="col-md preview">
+                                <a href="https://r-n-w.github.io/rock_paper_scissors">
+                                    <img src="images/RPS.png" alt="sample website">
+                                </a>
+                            </div>
+                            <div id="project 2" class="col-md preview">
+                                <a href="https://r-n-w.github.io/calculator">
+                                    <img src="images/Calculator.png" alt="sample website">
+                                </a>
+                            </div>
                         </div>
-                        <div id="project 2" class="col-md project">
-                            <a href="https://r-n-w.github.io/calculator">
-                                <img class="preview" src="images/Calculator.png" alt="sample website">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div id="project 3" class="col-md project">
-                            <a href="https://r-n-w.github.io/etch_a_sketch">
-                                <img class="preview" src="images/Etch-A-Sketch.png" alt="sample website">
-                            </a>
-                        </div>
-                        <div id="project 4" class="col-md project">
-                            <a href="https://r-n-w.github.io/google">
-                                <img class="preview" src="images/google.png" alt="sample website">
-                            </a>
+                        <div class="row">
+                            <div id="project 3" class="col-md preview">
+                                <a href="https://r-n-w.github.io/etch_a_sketch">
+                                    <img src="images/Etch-A-Sketch.png" alt="sample website">
+                                </a>
+                            </div>
+                            <div id="project 4" class="col-md preview">
+                                <a href="https://r-n-w.github.io/google">
+                                    <img src="images/google.png" alt="sample website">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="resume">
+
+
+<!---------------------------------RESUME------------------------------------->
+
+
+        <div id="resume" class="sunrise">
             <div id="page_3" class="page">
-                <div class="sunrise"></div>
+                <!-- <div class="sunrise"></div> -->
                 <div class="container">
-                    <div class="row mt-0">
-                        <div id="content" class="col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="content col-md-6 col-sm-12 ml-auto">
                             <h1>Resume</h1>
                             <hr>
                             <h3 class="section-head">Experience</h3>
@@ -220,28 +246,28 @@
                                 </div>
                             </div>
                             <h3 class="section-head">Education</h3>
-                            <div class="bullet-dropdown" data-toggle="collapse" href="#education1" role="button" aria-expanded="false" aria-controls="education1">
+                            <div class="bullet-dropdown" data-toggle="collapse" href=".education1" role="button" aria-expanded="false" aria-controls="education1">
                                 <div class="text">M.Eng. Industrial Design</div>
                                 <div class="subtext">
                                     <div>R.I.T. |&nbsp;</div>
                                     <div>2013 | GPA 4.0</div>
                                 </div>
                             </div>
-                            <div class="collapse" id="education1">
+                            <div class="collapse education1">
                                 <div class="pt-3">
                                     <ul>
                                         <li>Simultaneously managed engineering teams designing both a triathlon shoe and pedal, and a flax fiber bicycle from conceptualization and design to functional prototype. All customer objectives were met under budget.</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="bullet-dropdown" data-toggle="collapse" href="#education1" role="button" aria-expanded="false" aria-controls="education1">
+                            <div class="bullet-dropdown" data-toggle="collapse" href=".education1" role="button" aria-expanded="false" aria-controls="education1">
                                 <div class="text">B.S. Mechanical Engineering</div>
                                 <div class="subtext">
                                     <div>R.I.T. |&nbsp;</div>
                                     <div>2013 | GPA 3.96</div>
                                 </div>
                             </div>
-                            <div class="collapse" id="education1">
+                            <div class="collapse education1">
                                 <div class="pt-3">
                                     <ul>
                                         <li>RIT Outstanding Undergraduate Scholar</li>
@@ -255,49 +281,52 @@
             </div>
         </div>
         
-        <div id="contact" class="page">
-            <div id="page_4">
+
+<!---------------------------------CONTACT------------------------------------->
+
+
+        <div id="contact">
+            <div id="page_4" class="page">
                 <div class="container">
-                    <div class="row">
-                        <div id="content" class="col-sm-12">
-                            <h1>Contact</h1>
-                            <hr>
-                            <p>
-                                For now just reach out on LinkedIn or GitHub until I
-                                have this properly hosted with an email address.
-                            </p>
-                            <a
-                                href="https://github.com/r-n-w"
-                                class="fa fa-github"
-                            ></a>
-                            <a
-                                href="https://www.linkedin.com/in/rnw/"
-                                class="fa fa-linkedin-square"
-                            ></a>
+                    <div class="content m3rem">
+                        <h1>Contact</h1>
+                        <hr>
+                        <p>
+                            For now just reach out on 
+                            <a href="https://github.com/r-n-w">Github</a>
+                            or 
+                            <a href="https://www.linkedin.com/in/rnw/">LinkedIn</a>
+                            until I have this properly hosted with an email address.
+                        </p>
+                        <div class="icons">
+                            <div>
+                                <a href="https://github.com/r-n-w" class="fa fa-github"></a> 
+                                <a href="https://www.linkedin.com/in/rnw/" class="fa fa-linkedin-square"></a>
+                            </div>
                         </div>
+                    </div>
+                    <div class="icons">
+                        <i class="fa fa-leaf"></i>
                     </div>
                 </div>
             </div>
         </div>
 
 
+<!---------------------------------FOOTER------------------------------------->
 
 
         <footer id="footer">
             <div class="container">
                 <ul class="nav">
-                    <li class="nav-item">&#169; 2020 Ryan N Wilson</li>
-                    <li class="nav-item">
-                        <a
-                            href="https://github.com/r-n-w"
-                            class="fa fa-github"
-                        ></a>
-                        <a
-                            href="https://www.linkedin.com/in/rnw/"
-                            class="fa fa-linkedin-square"
-                        ></a>
+                    <li class="nav-item col">&#169; 2020 Ryan N Wilson</li>
+                    <li class="nav-item col">
+                        <a href="https://github.com/r-n-w" class="fa fa-github"></a>
+                        <a href="https://www.linkedin.com/in/rnw/" class="fa fa-linkedin-square"></a>
                     </li>
-                    <li class="nav-item">Stay Classy</li>
+                    <li class="nav-item col">
+                        Stay Classy
+                    </li>
                 </ul>
             </div>
         </footer>
