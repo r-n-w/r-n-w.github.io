@@ -9,6 +9,30 @@
             type="image/x-icon"
         />
         <title>RNW</title>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                document.body.classList.add('js-loading');
+                window.addEventListener("load", showPage);
+                function showPage() {
+                    document.body.classList.remove('js-loading');
+                }
+            })
+        
+        </script>
+            
+        
+
+
+        <style>
+        .js-loading * {
+            animation-play-state: paused !important;
+        }    
+        </style>
+
+
+
+
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -94,13 +118,7 @@
                                 </p>
                                 <hr />
 
-<!-- DO I WANT THESE LINKS?  THIS PAGE IS KINDA LAME-->
-<!-- 
-                                <h3><a href="projects.html">Projects</a></h3>
-                                <h3><a href="resume.html">Resume</a></h3>
-                                <h3><a href="contact.html">Contact</a></h3> -->
 
-<!-- TO HERE -->
 
                             </div>
                         </div>
@@ -121,25 +139,37 @@
                     <div class="content">
                         <h1>Projects</h1>
                         <hr>
-                        <div class="row">
-                            <div id="project 1" class="col-md preview">
+                        <div class="my-row">
+                            <div id="project 1" class="preview">
+                                <div class="description">
+                                    Rock Paper Scissors
+                                </div>
                                 <a href="https://r-n-w.github.io/rock_paper_scissors">
                                     <img src="images/RPS.png" alt="sample website">
                                 </a>
                             </div>
-                            <div id="project 2" class="col-md preview">
+                            <div id="project 2" class="preview">
+                                <div class="description">
+                                    Rock Paper Scissors
+                                </div>
                                 <a href="https://r-n-w.github.io/calculator">
                                     <img src="images/Calculator.png" alt="sample website">
                                 </a>
                             </div>
                         </div>
-                        <div class="row">
-                            <div id="project 3" class="col-md preview">
+                        <div class="my-row">
+                            <div id="project 3" class="preview">
+                                <div class="description">
+                                    Rock Paper Scissors
+                                </div>
                                 <a href="https://r-n-w.github.io/etch_a_sketch">
                                     <img src="images/Etch-A-Sketch.png" alt="sample website">
                                 </a>
                             </div>
-                            <div id="project 4" class="col-md preview">
+                            <div id="project 4" class="preview">
+                                <div class="description">
+                                    Rock Paper Scissors
+                                </div>
                                 <a href="https://r-n-w.github.io/google">
                                     <img src="images/google.png" alt="sample website">
                                 </a>
@@ -155,8 +185,8 @@
 <!---------------------------------RESUME------------------------------------->
 
 
-        <div id="resume" class="sunrise">
-            <div id="page_3" class="page">
+        <div id="resume">
+            <div id="page_3" class="page sunrise">
                 <!-- <div class="sunrise"></div> -->
                 <div class="container">
                     <div class="row">
