@@ -154,53 +154,17 @@ a:hover {
 #page_1 {
   position: relative;
   z-index: 1;
-  height: 100vh;
-  background-color: white;
-  margin-bottom: -10vh;
+  height: 120vh;
 }
 
 #page_1 .container {
   max-height: 80vh;
 }
 
-@-webkit-keyframes ARROW_DOWN {
-  0% {
-    -webkit-clip-path: polygon(0 0, 40% 0, 50% 0, 60% 0, 100% 0, 100% 90%, 0 100%);
-            clip-path: polygon(0 0, 40% 0, 50% 0, 60% 0, 100% 0, 100% 90%, 0 100%);
-  }
-  70% {
-    -webkit-clip-path: polygon(0 0, 40% 0, 50% 8%, 60% 0, 100% 0, 100% 90%, 0 100%);
-            clip-path: polygon(0 0, 40% 0, 50% 8%, 60% 0, 100% 0, 100% 90%, 0 100%);
-  }
-  100% {
-    -webkit-clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
-            clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
-  }
-}
-
-@keyframes ARROW_DOWN {
-  0% {
-    -webkit-clip-path: polygon(0 0, 40% 0, 50% 0, 60% 0, 100% 0, 100% 90%, 0 100%);
-            clip-path: polygon(0 0, 40% 0, 50% 0, 60% 0, 100% 0, 100% 90%, 0 100%);
-  }
-  70% {
-    -webkit-clip-path: polygon(0 0, 40% 0, 50% 8%, 60% 0, 100% 0, 100% 90%, 0 100%);
-            clip-path: polygon(0 0, 40% 0, 50% 8%, 60% 0, 100% 0, 100% 90%, 0 100%);
-  }
-  100% {
-    -webkit-clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
-            clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
-  }
-}
-
 #page_2 {
   position: relative;
-  background-color: #1b1b1b;
+  min-height: 130vh;
   z-index: 10;
-  -webkit-animation: ARROW_DOWN 2s;
-          animation: ARROW_DOWN 2s;
-  -webkit-clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
-          clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
 }
 
 #page_2 .preview {
@@ -235,6 +199,7 @@ a:hover {
 }
 
 #resume {
+  min-height: 150vh;
   position: relative;
 }
 
@@ -301,6 +266,10 @@ a:hover {
   background-position: left bottom;
   background-size: contain;
   background-blend-mode: saturation;
+}
+
+#contact {
+  height: 100vh;
 }
 
 #contact .fa-github, #contact .fa-linkedin-square {

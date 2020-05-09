@@ -111,7 +111,7 @@ body,html {
 }
 .page {
     // max-width: 900px;
-    // min-height: 100vh;
+    // min-height: 130vh;
     padding-top: 5rem;
     a {
         color: $dark;
@@ -119,6 +119,7 @@ body,html {
     a:hover {
         color: $middle;
     }
+
 }
 .container {
     max-width: 900px;
@@ -143,10 +144,10 @@ a:hover {
 #page_1 {
     position: relative;
     z-index: 1;
-    height: 100vh;
+    height: 120vh;
     // width: 100%;
-    background-color: white;
-    margin-bottom: -10vh;
+    // background-color: white;
+    // margin-bottom: -10vh;
     .container {
         max-height: 80vh;
     }
@@ -158,19 +159,20 @@ a:hover {
 
 
 // PROJECT ------------------------------------------>
-@keyframes ARROW_DOWN {
-    0% {clip-path: polygon(0 0, 40% 0, 50% 0, 60% 0, 100% 0, 100% 90%, 0 100%);}
-    70% {clip-path: polygon(0 0, 40% 0, 50% 8%, 60% 0, 100% 0, 100% 90%, 0 100%);}
-    100% {clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);}
-}
+// @keyframes ARROW_DOWN {
+//     0% {clip-path: polygon(0 0, 40% 0, 50% 0, 60% 0, 100% 0, 100% 90%, 0 100%);}
+//     70% {clip-path: polygon(0 0, 40% 0, 50% 8%, 60% 0, 100% 0, 100% 90%, 0 100%);}
+//     100% {clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);}
+// }
 
 
 #page_2 {
     position: relative;
-    background-color: $dark;
+    min-height: 130vh;
+    // background-color: $dark;
     z-index: 10;
-    animation: ARROW_DOWN 2s;
-    clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
+    // animation: ARROW_DOWN 2s;
+    // clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
 
     .preview {
         position: relative;
@@ -205,6 +207,7 @@ a:hover {
 // RESUME ------------------------------------------>
 
 #resume {
+    min-height: 150vh;
     position: relative;
     .section-head {
         color: $middle;
@@ -262,6 +265,7 @@ a:hover {
 
 
 #contact {
+    height: 100vh;
     .container {
         // text-align: center;
     }
