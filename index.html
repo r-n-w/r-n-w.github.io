@@ -11,27 +11,20 @@
         <title>RNW</title>
 
         <script>
-            document.addEventListener("DOMContentLoaded", function(event) {
-                document.body.classList.add('js-loading');
+            document.addEventListener("DOMContentLoaded", function (event) {
+                document.body.classList.add("js-loading");
                 window.addEventListener("load", showPage);
                 function showPage() {
-                    document.body.classList.remove('js-loading');
+                    document.body.classList.remove("js-loading");
                 }
-            })
-        
+            });
         </script>
-            
-        
-
 
         <style>
-        .js-loading * {
-            animation-play-state: paused !important;
-        }    
+            .js-loading * {
+                animation-play-state: paused !important;
+            }
         </style>
-
-
-
 
         <link
             rel="stylesheet"
@@ -41,17 +34,15 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body data-spy="scroll" data-target=".navbar" id="home">
-
-
-
-<!---------------------------------HEADER------------------------------------->
-
-
+        <!---------------------------------HEADER------------------------------------->
 
         <header id="header">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-dark">
-                    <a class="navbar-brand d-inline-block align-top" href="#about-shell">
+                    <a
+                        class="navbar-brand d-inline-block align-top"
+                        href="#about-shell"
+                    >
                         <i class="fa fa-leaf"></i>
                         Ryan N Wilson
                     </a>
@@ -89,122 +80,119 @@
             </div>
         </header>
 
+        <!---------------------------------HOME | ABOUT------------------------------------->
 
-
-<!---------------------------------HOME | ABOUT------------------------------------->
-
-
-
-       
-            <div id="about-shell">
-                <div id="about" class="container my-row">
-                    <div id="profile">
-                        <img src="images/profile_BW.jpeg" alt="profile picture" />
-                    </div>
-                    <div id="about-text">
-                        <div class="content">
-                            <h1>About</h1>
-                            <hr />
-                            <p>
-                                "I am a front end web developer with a technical
-                                background in Mechanical Engineering and
-                                Industrial Design. I was always one who loved
-                                the intersection of products that had to work
-                                well and be beautiful at the same time. Now I am
-                                bringing that same skillset into web
-                                development."
-                                - Ryan
-                            </p>
-                            <hr />
-                        </div>
+        <div id="about-shell">
+            <div id="about" class="container my-row">
+                <div id="profile">
+                    <img src="images/profile_BW.jpeg" alt="profile picture" />
+                </div>
+                <div id="about-text">
+                    <div class="content">
+                        <h1>About</h1>
+                        <hr />
+                        <p>
+                            "I am a front end web developer with a technical
+                            background in Mechanical Engineering and Industrial
+                            Design. I've always loved working at the
+                            intersection of form and function; products that
+                            have to work well and be beautiful at the same time.
+                            Now I am bringing that same skillset into web
+                            development." <br />
+                            - Ryan
+                        </p>
+                        <hr />
                     </div>
                 </div>
             </div>
-    
-        
+        </div>
 
+        <!---------------------------------PROJECTS------------------------------------->
 
-
-<!---------------------------------PROJECTS------------------------------------->
-
-
-
-        
-            <div id="projects-shell">
-                <div id="projects" class="container">
-                    <h1>Projects</h1>
-                    <hr style="border-color: inherit">
-                    <div class="my-row">
-                        <div id="project 1" class="preview">
-                            <div class="description">
-                                <h3>Rock Paper Scissors</h3>
-                                <ul>
-                                    <li>JavaScript game logic</li>
-                                    <li>JavaScript animation</li>
-                                    <li>Intuitive interation</li>
-                                </ul>
-                            </div>
-                            <a href="https://r-n-w.github.io/rock_paper_scissors">
-                                <img src="images/RPS.png" alt="sample website">
-                            </a>
+        <div id="projects-shell">
+            <div id="projects" class="container">
+                <h1>Projects</h1>
+                <hr style="border-color: inherit;" />
+                <div class="my-row">
+                    <div id="project 1" class="preview">
+                        <div class="description">
+                            <h3>Rock Paper Scissors</h3>
+                            <ul>
+                                <li>JavaScript game logic</li>
+                                <li>JavaScript animation</li>
+                                <li>Intuitive interation</li>
+                            </ul>
                         </div>
-                        <div id="project 2" class="preview">
-                            <div class="description">
-                                <h3>Calculator</h3>
-                                <ul>
-                                    <li>Basic algorithms</li>
-                                    <li>Event listeners</li>
-                                    <li>Mobile/Desktop scaling</li>
-                                </ul>
-                            </div>
-                            <a href="https://r-n-w.github.io/calculator">
-                                <img src="images/Calculator.png" alt="sample website">
-                            </a>
-                        </div>
+                        <a href="https://r-n-w.github.io/rock_paper_scissors">
+                            <img src="images/RPS.png" alt="sample website" />
+                        </a>
                     </div>
-                    <div class="my-row">
-                        <div id="project 3" class="preview">
-                            <div class="description">
-                                <h3>Etch-A-Sketch</h3>
-                                <ul>
-                                    <li>JavaScript DOM manipulation</li>
-                                    <li>JavaScript CSS manipulation</li>
-                                </ul>
-                            </div>
-                            <a href="https://r-n-w.github.io/etch_a_sketch">
-                                <img src="images/Etch-A-Sketch.png" alt="sample website">
-                            </a>
+                    <div id="project 2" class="preview">
+                        <div class="description">
+                            <h3>Calculator</h3>
+                            <ul>
+                                <li>Basic algorithms</li>
+                                <li>Event listeners</li>
+                                <li>Mobile/Desktop scaling</li>
+                            </ul>
                         </div>
-                        <div id="project 4" class="preview">
-                            <div class="description">
-                                <h3>Google Homepage</h3>  
-                                <ul>
-                                    <li>CSS details</li>
-                                    <li>Basic JavaScrip animation</li>
-                                </ul>                        
-                            </div>
-                            <a href="https://r-n-w.github.io/google">
-                                <img src="images/google.png" alt="sample website">
-                            </a>
+                        <a href="https://r-n-w.github.io/calculator">
+                            <img
+                                src="images/Calculator.png"
+                                alt="sample website"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="my-row">
+                    <div id="project 3" class="preview">
+                        <div class="description">
+                            <h3>Etch-A-Sketch</h3>
+                            <ul>
+                                <li>JavaScript DOM manipulation</li>
+                                <li>JavaScript CSS manipulation</li>
+                            </ul>
                         </div>
+                        <a href="https://r-n-w.github.io/etch_a_sketch">
+                            <img
+                                src="images/Etch-A-Sketch.png"
+                                alt="sample website"
+                            />
+                        </a>
+                    </div>
+                    <div id="project 4" class="preview">
+                        <div class="description">
+                            <h3>Google Homepage</h3>
+                            <ul>
+                                <li>CSS details</li>
+                                <li>Basic JavaScrip animation</li>
+                            </ul>
+                        </div>
+                        <a href="https://r-n-w.github.io/google">
+                            <img src="images/google.png" alt="sample website" />
+                        </a>
                     </div>
                 </div>
             </div>
-       
+        </div>
 
-
-
-<!---------------------------------RESUME------------------------------------->
-
+        <!---------------------------------RESUME------------------------------------->
 
         <div id="resume-shell">
             <div id="resume" class="page sunrise">
                 <div class="container">
                     <div class="content">
                         <h1>Resume</h1>
-                        <hr>
+                        <hr />
                         <h3 class="section-head">Experience</h3>
-                        <div class="bullet-dropdown" data-toggle="collapse" href=".experience1" role="button" aria-expanded="false" aria-controls="experience1">
+                        <div
+                            class="bullet-dropdown"
+                            data-toggle="collapse"
+                            href=".experience1"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="experience1"
+                        >
                             <div class="text">Seven Cycles</div>
                             <div class="subtext">
                                 <div>Design Engineer |&nbsp;</div>
@@ -216,26 +204,36 @@
                                 <ul>
                                     <li>
                                         Managed numerous R&D projects
-                                        simultaneously, including new product
-                                        development, testing, and manufacturing
-                                        improvements.
+                                        simultaneously, including the creation
+                                        of our flagship full supension moutain
+                                        bike (Kellcat SL).
                                     </li>
                                     <li>
-                                        Initiated company effort to create shorter
-                                        chainstays with more clearance, reducing
-                                        defects and making Seven more competitive in
-                                        the racing market.
+                                        In process of updating our website deployment and version control to use Git.
                                     </li>
                                     <li>
-                                        Created and implemented system which turns
-                                        bicycle frame specifications into a
-                                        production ready technical drawing in
+                                        Created and implemented system which
+                                        turns bicycle frame specifications into
+                                        a production ready technical drawing in
                                         minutes using Solidworks.
+                                    </li>
+                                    <li>
+                                        Initiated company effort to create
+                                        shorter chainstays with more clearance,
+                                        reducing defects and making Seven more
+                                        competitive in the racing market.
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="bullet-dropdown" data-toggle="collapse" href=".experience1" role="button" aria-expanded="false" aria-controls="experience2">
+                        <div
+                            class="bullet-dropdown"
+                            data-toggle="collapse"
+                            href=".experience1"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="experience2"
+                        >
                             <div class="text">PUMA SE</div>
                             <div class="subtext">
                                 <div>Footwear Development Intern |&nbsp;</div>
@@ -246,47 +244,62 @@
                             <div class="pt-3">
                                 <ul>
                                     <li>
-                                        Drove the design and material selection for
-                                        an extensive line of footwear, working with
-                                        teams in Germany and Vietnam to achieve the
-                                        best price points, comfort, aesthetics, and
+                                        Drove the design and material selection
+                                        for an extensive line of footwear,
+                                        working with teams in Germany and
+                                        Vietnam to achieve the best price
+                                        points, comfort, aesthetics, and
                                         durability.
                                     </li>
                                     <li>
-                                        Performed research and interviews across the
-                                        company, and created a guide of standard
-                                        best practices for developing performance
-                                        footwear.
+                                        Performed research and interviews across
+                                        the company, and created a guide of
+                                        standard best practices for developing
+                                        performance footwear.
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="bullet-dropdown" data-toggle="collapse" href=".experience1" role="button" aria-expanded="false" aria-controls="experience3">
+                        <div
+                            class="bullet-dropdown"
+                            data-toggle="collapse"
+                            href=".experience1"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="experience3"
+                        >
                             <div class="text">Vocollect</div>
                             <div class="subtext">
                                 <div>Mechanical Engineering Co-op |&nbsp;</div>
-                                <div>Summer 2010</div>    
+                                <div>Summer 2010</div>
                             </div>
                         </div>
                         <div class="collapse experience1">
                             <div class="pt-3">
                                 <ul>
                                     <li>
-                                        Led the development of a drop test fixture
-                                        for testing IP 67 rated rugged computing
-                                        devices.
+                                        Led the development of a drop test
+                                        fixture for testing IP 67 rated rugged
+                                        computing devices.
                                     </li>
                                     <li>
                                         Collaborated with the partner industrial
-                                        design firm on solving technical problems in
-                                        the next generation voice recognition
-                                        computing device.
+                                        design firm on solving technical
+                                        problems in the next generation voice
+                                        recognition computing device.
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <h3 class="section-head">Education</h3>
-                        <div class="bullet-dropdown" data-toggle="collapse" href=".education1" role="button" aria-expanded="false" aria-controls="education1">
+                        <div
+                            class="bullet-dropdown"
+                            data-toggle="collapse"
+                            href=".education1"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="education1"
+                        >
                             <div class="text">M.Eng. Industrial Design</div>
                             <div class="subtext">
                                 <div>R.I.T. |&nbsp;</div>
@@ -296,11 +309,25 @@
                         <div class="collapse education1">
                             <div class="pt-3">
                                 <ul>
-                                    <li>Simultaneously managed engineering teams designing both a triathlon shoe and pedal, and a flax fiber bicycle from conceptualization and design to functional prototype. All customer objectives were met under budget.</li>
+                                    <li>
+                                        Simultaneously managed engineering teams
+                                        designing both a triathlon shoe and
+                                        pedal, and a flax fiber bicycle from
+                                        conceptualization and design to
+                                        functional prototype. All customer
+                                        objectives were met under budget.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="bullet-dropdown" data-toggle="collapse" href=".education1" role="button" aria-expanded="false" aria-controls="education1">
+                        <div
+                            class="bullet-dropdown"
+                            data-toggle="collapse"
+                            href=".education1"
+                            role="button"
+                            aria-expanded="false"
+                            aria-controls="education1"
+                        >
                             <div class="text">B.S. Mechanical Engineering</div>
                             <div class="subtext">
                                 <div>R.I.T. |&nbsp;</div>
@@ -310,7 +337,9 @@
                         <div class="collapse education1">
                             <div class="pt-3">
                                 <ul>
-                                    <li>RIT Outstanding Undergraduate Scholar</li>
+                                    <li>
+                                        RIT Outstanding Undergraduate Scholar
+                                    </li>
                                     <li>Tß∏ Engineering Honor Society</li>
                                 </ul>
                             </div>
@@ -319,28 +348,35 @@
                 </div>
             </div>
         </div>
-            
 
-<!---------------------------------CONTACT------------------------------------->
-
+        <!---------------------------------CONTACT------------------------------------->
 
         <div id="contact-shell">
             <div id="contact">
                 <div class="container">
                     <div class="content m3rem">
                         <h1>Contact</h1>
-                        <hr>
+                        <hr />
                         <p>
-                            For now just reach out on 
+                            For now just reach out on
                             <a href="https://github.com/r-n-w">Github</a>
-                            or 
-                            <a href="https://www.linkedin.com/in/rnw/">LinkedIn</a>
-                            until I have this properly hosted with an email address.
+                            or
+                            <a href="https://www.linkedin.com/in/rnw/"
+                                >LinkedIn</a
+                            >
+                            until I have this properly hosted with an email
+                            address.
                         </p>
                         <div class="icons">
                             <div>
-                                <a href="https://github.com/r-n-w" class="fa fa-github"></a> 
-                                <a href="https://www.linkedin.com/in/rnw/" class="fa fa-linkedin-square"></a>
+                                <a
+                                    href="https://github.com/r-n-w"
+                                    class="fa fa-github"
+                                ></a>
+                                <a
+                                    href="https://www.linkedin.com/in/rnw/"
+                                    class="fa fa-linkedin-square"
+                                ></a>
                             </div>
                         </div>
                     </div>
@@ -351,17 +387,21 @@
             </div>
         </div>
 
-
-<!---------------------------------FOOTER------------------------------------->
-
+        <!---------------------------------FOOTER------------------------------------->
 
         <footer id="footer">
             <div class="container">
                 <ul class="nav">
                     <li class="nav-item col">&#169; 2020 Ryan N Wilson</li>
                     <li class="nav-item col">
-                        <a href="https://github.com/r-n-w" class="fa fa-github"></a>
-                        <a href="https://www.linkedin.com/in/rnw/" class="fa fa-linkedin-square"></a>
+                        <a
+                            href="https://github.com/r-n-w"
+                            class="fa fa-github"
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/in/rnw/"
+                            class="fa fa-linkedin-square"
+                        ></a>
                     </li>
                     <li class="nav-item col">
                         Stay Classy
@@ -369,12 +409,22 @@
                 </ul>
             </div>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
 
         <script src="js/script.js"></script>
     </body>
 </html>
-
-

@@ -8,7 +8,7 @@
     width: 100%;
   }
   #about-text {
-    padding-top: 3rem;
+    padding-top: 4rem;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -22,6 +22,9 @@
   #resume {
     padding-top: 4rem;
     min-height: 100vh;
+  }
+  #contact {
+    padding-top: 4rem;
   }
   .content {
     background-color: #ffffff;
