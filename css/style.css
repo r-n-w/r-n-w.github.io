@@ -60,8 +60,13 @@
   @-webkit-keyframes PROFILE {
     0% {
       opacity: 0;
-      -webkit-transform: scale(1) translateX(-200%);
-              transform: scale(1) translateX(-200%);
+      -webkit-transform: scale(1.15) translateX(50%);
+              transform: scale(1.15) translateX(50%);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: scale(1.25) translateX(50%);
+              transform: scale(1.25) translateX(50%);
     }
     100% {
       opacity: 1;
@@ -72,8 +77,13 @@
   @keyframes PROFILE {
     0% {
       opacity: 0;
-      -webkit-transform: scale(1) translateX(-200%);
-              transform: scale(1) translateX(-200%);
+      -webkit-transform: scale(1.15) translateX(50%);
+              transform: scale(1.15) translateX(50%);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: scale(1.25) translateX(50%);
+              transform: scale(1.25) translateX(50%);
     }
     100% {
       opacity: 1;
@@ -88,6 +98,9 @@
     70% {
       top: -50rem;
     }
+    90% {
+      top: 3rem;
+    }
     100% {
       top: 0;
     }
@@ -98,6 +111,9 @@
     }
     70% {
       top: -50rem;
+    }
+    90% {
+      top: 3rem;
     }
     100% {
       top: 0;
@@ -127,8 +143,8 @@
     display: block;
   }
   #about-shell #about-text {
-    -webkit-animation: ABOUT_TEXT 3.5s;
-            animation: ABOUT_TEXT 3.5s;
+    -webkit-animation: ABOUT_TEXT 3s;
+            animation: ABOUT_TEXT 3s;
     position: relative;
     top: 0;
     width: 50%;

@@ -1,6 +1,6 @@
 // VARIABLES ------------------------------------------>
 
-
+$animation-time: 3s;
 $color: #155a00;
 $dark: #1b1b1b;
 $med-dark: #2c2c2c;
@@ -62,12 +62,14 @@ $banner-line-height: 3rem;
 
 @media only screen and (min-width: 769px) {
     @keyframes PROFILE {
-        0% {opacity: 0; transform: scale(1) translateX(-200%);}
+        0% {opacity: 0; transform: scale(1.15) translateX(50%);}
+        60% {opacity: 1; transform: scale(1.25) translateX(50%);}
         100% {opacity: 1;transform: scale(1) translateX(0px);}
     }
     @keyframes ABOUT_TEXT {
         0% {top: -50rem;}
         70% {top: -50rem;}
+        90% {top: 3rem;}
         100% {top: 0;}
     }
 
@@ -88,7 +90,7 @@ $banner-line-height: 3rem;
             display: block;
             width: auto;
             height: 70vh;
-            animation: PROFILE 3s;
+            animation: PROFILE $animation-time;
             img {
                 max-height: 100%;
                 max-width: 100%;
@@ -96,7 +98,7 @@ $banner-line-height: 3rem;
             }
         }
         #about-text {
-            animation: ABOUT_TEXT 3.5s;
+            animation: ABOUT_TEXT $animation-time;
             position: relative;
             top: 0;
             width: 50%;
