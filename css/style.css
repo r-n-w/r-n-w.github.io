@@ -7,10 +7,21 @@
   #profile img {
     width: 100%;
   }
-  #about {
+  #about-text {
+    padding-top: 3rem;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .preview img {
+    opacity: .2;
+  }
+  #projects {
+    padding-top: 4rem;
+  }
+  #resume {
+    padding-top: 4rem;
+    min-height: 100vh;
   }
   .content {
     background-color: #ffffffe1;
@@ -46,19 +57,154 @@
 }
 
 @media only screen and (min-width: 769px) {
-  #profile {
-    max-height: 80vh;
+  @-webkit-keyframes PROFILE {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(1) translateX(-200%);
+              transform: scale(1) translateX(-200%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1) translateX(0px);
+              transform: scale(1) translateX(0px);
+    }
   }
-  #profile img {
-    max-height: 100%;
+  @keyframes PROFILE {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(1) translateX(-200%);
+              transform: scale(1) translateX(-200%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1) translateX(0px);
+              transform: scale(1) translateX(0px);
+    }
+  }
+  @-webkit-keyframes ABOUT_TEXT {
+    0% {
+      top: -50rem;
+    }
+    70% {
+      top: -50rem;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  @keyframes ABOUT_TEXT {
+    0% {
+      top: -50rem;
+    }
+    70% {
+      top: -50rem;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  #about-shell {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    background-color: white;
+    margin-bottom: -10vh;
+  }
+  #about-shell #about {
+    padding-top: 10vh;
+  }
+  #about-shell #profile {
+    position: relative;
     display: block;
-    margin: auto;
+    width: auto;
+    height: 70vh;
+    -webkit-animation: PROFILE 3s;
+            animation: PROFILE 3s;
+  }
+  #about-shell #profile img {
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+  }
+  #about-shell #about-text {
+    -webkit-animation: ABOUT_TEXT 3.5s;
+            animation: ABOUT_TEXT 3.5s;
+    position: relative;
+    top: 0;
+    width: 50%;
+  }
+  #about-shell .content {
+    margin-top: 10vh;
+  }
+  @-webkit-keyframes ARROW_DOWN {
+    0% {
+      -webkit-clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    30% {
+      -webkit-clip-path: polygon(0 0, 40% 0, 50% 8%, 60% 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 40% 0, 50% 8%, 60% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    100% {
+      -webkit-clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  @keyframes ARROW_DOWN {
+    0% {
+      -webkit-clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    30% {
+      -webkit-clip-path: polygon(0 0, 40% 0, 50% 8%, 60% 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 40% 0, 50% 8%, 60% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    100% {
+      -webkit-clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  #projects-shell {
+    position: relative;
+    padding-top: 20vh;
+    color: white;
+    min-height: 130vh;
+    background-color: #2c2c2c;
+    z-index: 10;
+    -webkit-animation: ARROW_DOWN 1s 5s 2;
+            animation: ARROW_DOWN 1s 5s 2;
+    -webkit-clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
+            clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
+  }
+  #projects-shell #projects {
+    padding-top: 20vh;
+  }
+  #projects-shell .preview {
+    margin: 10px;
+  }
+  #projects-shell .preview:hover img {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+    opacity: .2;
+  }
+  #resume-shell #resume {
+    padding-top: 10vh;
+    min-height: 150vh;
+  }
+  #resume-shell .content {
+    width: 50%;
+    margin-left: auto;
+  }
+  #contact-shell #contact {
+    padding-top: 20vh;
   }
   .content {
-    margin-bottom: 1rem;
-    border-radius: 10px;
     -webkit-box-shadow: 0 0 5px 0 #666666;
             box-shadow: 0 0 5px 0 #666666;
+    margin-bottom: 1rem;
+    border-radius: 10px;
     padding: 1rem 1rem 1rem 1rem;
     background-color: #ffffffe1;
   }
@@ -118,24 +264,8 @@ body, html {
   text-decoration: none;
 }
 
-.page {
-  padding-top: 5rem;
-}
-
-.page a {
-  color: #1b1b1b;
-}
-
-.page a:hover {
-  color: #666666;
-}
-
 .container {
   max-width: 900px;
-}
-
-.m3rem {
-  margin-top: 3rem;
 }
 
 a:hover {
@@ -151,64 +281,41 @@ a:hover {
   text-decoration: none;
 }
 
-#page_1 {
-  position: relative;
-  z-index: 1;
-  height: 120vh;
-}
-
-#page_1 .container {
-  max-height: 80vh;
-}
-
-#page_2 {
-  position: relative;
-  min-height: 130vh;
-  z-index: 10;
-}
-
-#page_2 .preview {
+.preview {
   position: relative;
   display: block;
   background-color: #1b1b1b;
   color: white;
-  border: 1px #666666 solid;
-  border-radius: 5px;
-  margin: 10px;
+  border: #2c2c2c 1px solid;
+  border-radius: .5rem;
   overflow: hidden;
 }
 
-#page_2 .preview .description {
+.preview .description {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 2rem;
 }
 
-#page_2 .preview img {
+.preview img {
   position: absolute;
   top: 0;
   width: 100%;
 }
 
-#page_2 .preview:hover img {
-  -webkit-transition: ease 1000;
-  transition: ease 1000;
-  opacity: .1;
-}
-
-#resume {
-  min-height: 150vh;
+#resume-shell #resume {
   position: relative;
 }
 
-#resume .section-head {
+#resume-shell .section-head {
   color: #666666;
   margin-top: 1rem;
 }
 
-#resume .bullet-dropdown {
+#resume-shell .bullet-dropdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,11 +331,11 @@ a:hover {
   cursor: pointer;
 }
 
-#resume .bullet-dropdown:hover {
+#resume-shell .bullet-dropdown:hover {
   color: #666666;
 }
 
-#resume .text {
+#resume-shell .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,7 +344,7 @@ a:hover {
           justify-content: space-between;
 }
 
-#resume .subtext {
+#resume-shell .subtext {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +352,7 @@ a:hover {
   color: #666666;
 }
 
-#resume .text::after {
+#resume-shell .text::after {
   display: block;
   margin-top: 1.5rem;
   margin-right: 1rem;
@@ -259,7 +366,7 @@ a:hover {
   border-left: .3em solid transparent;
 }
 
-#resume .sunrise {
+#resume-shell .sunrise {
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), url("../images/profile_sunrise.png"), -webkit-gradient(linear, left top, right top, from(#ffffff00), color-stop(75%, #ffffff));
   background-image: linear-gradient(white, white), url("../images/profile_sunrise.png"), linear-gradient(to right, #ffffff00, #ffffff 75%);
   background-repeat: no-repeat;
@@ -270,6 +377,14 @@ a:hover {
 
 #contact {
   height: 100vh;
+}
+
+#contact a {
+  color: #1b1b1b;
+}
+
+#contact a:hover {
+  color: #666666;
 }
 
 #contact .fa-github, #contact .fa-linkedin-square {

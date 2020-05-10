@@ -3,6 +3,7 @@
 
 $color: #155a00;
 $dark: #1b1b1b;
+$med-dark: #2c2c2c;
 $middle: #666666;
 $light: white;
 $banner-line-height: 3rem;
@@ -17,8 +18,21 @@ $banner-line-height: 3rem;
             width: 100%;
         }
     }
-    #about {
+    #about-text {
+        padding-top: 3rem;
         order: 1;
+    }
+    .preview {
+        img {
+            opacity: .2;
+        }
+    }
+    #projects {
+        padding-top: 4rem;
+    }
+    #resume {
+        padding-top: 4rem;
+        min-height: 100vh;
     }
     .content {
         background-color: #ffffffe1; 
@@ -47,18 +61,105 @@ $banner-line-height: 3rem;
 
 
 @media only screen and (min-width: 769px) {
-    #profile {
-        max-height: 80vh;
-        img {
-            max-height: 100%;
+    @keyframes PROFILE {
+        0% {opacity: 0; transform: scale(1) translateX(-200%);}
+        100% {opacity: 1;transform: scale(1) translateX(0px);}
+    }
+    @keyframes ABOUT_TEXT {
+        0% {top: -50rem;}
+        70% {top: -50rem;}
+        100% {top: 0;}
+    }
+
+
+    #about-shell {
+        
+        position: relative;
+        z-index: 1;
+        height: 100vh;
+        background-color: white;
+        margin-bottom: -10vh;
+        #about {
+            padding-top: 10vh;
+        }
+       
+        #profile {
+            position: relative;
             display: block;
-            margin: auto;
+            width: auto;
+            height: 70vh;
+            animation: PROFILE 3s;
+            img {
+                max-height: 100%;
+                max-width: 100%;
+                display: block;
+            }
+        }
+        #about-text {
+            animation: ABOUT_TEXT 3.5s;
+            position: relative;
+            top: 0;
+            width: 50%;
+        }
+        .content {
+            margin-top: 10vh;
+        }
+
+    }
+    @keyframes ARROW_DOWN {
+        0% {clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 100%, 0 100%);}
+        30% {clip-path: polygon(0 0, 40% 0, 50% 8%, 60% 0, 100% 0, 100% 100%, 0 100%);}
+        100% {clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 100%, 0 100%);}
+    }
+    
+    #projects-shell {
+        position: relative;
+        padding-top: 20vh;
+        color: $light;
+        min-height: 130vh;
+        background-color: $med-dark;
+        z-index: 10;
+        animation: ARROW_DOWN 1s 5s 2;
+        clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
+    
+        #projects {
+            padding-top: 20vh;
+            
+        }
+        .preview {
+            margin: 10px;
+        }
+        .preview:hover {
+            img {
+                transition-property: opacity;
+                transition-duration: .3s;
+                opacity: .2;
+            }
+        }
+       
+    }
+
+    #resume-shell {
+        #resume {
+            padding-top: 10vh;
+            min-height: 150vh;
+        }
+        .content {
+            width: 50%;
+            margin-left: auto;
         }
     }
+
+    #contact-shell {
+        #contact {
+            padding-top: 20vh;
+        }
+    }
+   
     .content {
+        box-shadow: 0 0 5px 0 $middle;
         margin-bottom: 1rem;
         border-radius:10px;
-        box-shadow: 0 0 5px 0 $middle;
         padding: 1rem 1rem 1rem 1rem;
         background-color: #ffffffe1;
     }
@@ -85,6 +186,7 @@ $banner-line-height: 3rem;
 // UNIVERSAL ------------------------------------------>
 
 
+
 body,html {
     scroll-behavior: smooth;
     height: 100%;
@@ -109,25 +211,11 @@ body,html {
         text-decoration: none;
     }
 }
-.page {
-    // max-width: 900px;
-    // min-height: 130vh;
-    padding-top: 5rem;
-    a {
-        color: $dark;
-    }
-    a:hover {
-        color: $middle;
-    }
 
-}
 .container {
     max-width: 900px;
 }
 
-.m3rem {
-    margin-top: 3rem;
-}
 a:hover {
     text-decoration: none;
 }
@@ -139,76 +227,42 @@ a:hover {
     text-decoration: none;
 }
 
-// ABOUT ------------------------------------------>
-
-#page_1 {
-    position: relative;
-    z-index: 1;
-    height: 120vh;
-    // width: 100%;
-    // background-color: white;
-    // margin-bottom: -10vh;
-    .container {
-        max-height: 80vh;
-    }
-
-
-}
-
-
-
 
 // PROJECT ------------------------------------------>
-// @keyframes ARROW_DOWN {
-//     0% {clip-path: polygon(0 0, 40% 0, 50% 0, 60% 0, 100% 0, 100% 90%, 0 100%);}
-//     70% {clip-path: polygon(0 0, 40% 0, 50% 8%, 60% 0, 100% 0, 100% 90%, 0 100%);}
-//     100% {clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);}
-// }
 
 
-#page_2 {
+    
+.preview {
     position: relative;
-    min-height: 130vh;
-    // background-color: $dark;
-    z-index: 10;
-    // animation: ARROW_DOWN 2s;
-    // clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
-
-    .preview {
-        position: relative;
-        display: block;
-        background-color: $dark;
-        color: $light;
-        border: 1px $middle solid;
-        border-radius: 5px;
-        margin: 10px;
-        overflow: hidden;
-        .description {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-        }
-        img {
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
+    display: block;
+    background-color: $dark;
+    color: $light;
+    border: $med-dark 1px solid;
+    border-radius: .5rem;
+    // margin: 10px;
+    overflow: hidden;
+    .description {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 2rem;
     }
-    .preview:hover {
-        img {
-            transition: ease 1000;
-            opacity: .1;
-        }
+    img {
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
 }
+
 
 // RESUME ------------------------------------------>
 
-#resume {
-    min-height: 150vh;
-    position: relative;
+#resume-shell {
+    #resume {
+        position: relative;
+    }
     .section-head {
         color: $middle;
         margin-top: 1rem;
@@ -266,8 +320,11 @@ a:hover {
 
 #contact {
     height: 100vh;
-    .container {
-        // text-align: center;
+    a {
+        color: $dark;
+    }
+    a:hover {
+        color: $middle;
     }
     .fa-github, .fa-linkedin-square {
         font-size: 3rem;
