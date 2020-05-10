@@ -1,22 +1,3 @@
-Next Steps:
+r-n-w.github.io
 
-HOME PAGE:
-- Better layout for text
-
-Resume:
-- Add a paragraph, or programming related experience
-
-PROJECTS:
-- Mousover to add details about each project
-- Shrink to fit page
-
-CONTACT:
-- Don't put my name at the top, it's weird
-
-GENERAL:
-- Icon mouseover color fix
-- Would be nice to be one long scrolling website
-
-First page is Resume unofficially, and then Projects, Resume, Contact
-
-It's reconnected!
+This is my personal website showcasing some of my work and qualifications. This is the fastest way to get a sense of where my skills are at. If you like what you see don't hesitate to reach out about work opportunities.
