@@ -117,16 +117,16 @@ $banner-line-height: 3rem;
     #projects-shell {
         position: relative;
         padding-top: 20vh;
+        padding-bottom: 15vh;
         color: $light;
         min-height: 130vh;
         background-color: $med-dark;
         z-index: 10;
         animation: ARROW_DOWN 1s 5s 2;
-        clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 90%, 0 100%);
+        clip-path: polygon(0 0, 40% 0, 50% 5%, 60% 0, 100% 0, 100% 93%, 0 100%);
     
         #projects {
-            padding-top: 20vh;
-            
+            padding-top: 10vh;
         }
         .preview {
             margin: 10px;
