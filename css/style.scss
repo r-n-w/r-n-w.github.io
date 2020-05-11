@@ -19,7 +19,7 @@ $banner-line-height: 3rem;
         }
     }
     #about-text {
-        padding-top: 3rem;
+        padding-top: 4rem;
         order: 1;
     }
     .preview {
@@ -33,6 +33,9 @@ $banner-line-height: 3rem;
     #resume {
         padding-top: 4rem;
         min-height: 100vh;
+    }
+    #contact {
+        padding-top: 4rem;
     }
     .content {
         background-color: #ffffff; 
@@ -360,6 +363,7 @@ a:hover {
         color: $light;
         line-height: $banner-line-height;
         font-size: 2rem;
+        margin: 0 5px 0 5px;
     }
     .fa:hover {
         color: $dark;
