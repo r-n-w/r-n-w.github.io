@@ -23,6 +23,17 @@
     padding-top: 4rem;
     min-height: 100vh;
   }
+  #resume .sunrise-mobile {
+    display: block;
+    width: 100%;
+    height: 80vw;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), url("../images/sunrise.jpg");
+    background-image: linear-gradient(white, white), url("../images/sunrise.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+    background-blend-mode: saturation;
+  }
   #contact {
     padding-top: 4rem;
   }
@@ -97,29 +108,37 @@
   @-webkit-keyframes ABOUT_TEXT {
     0% {
       top: -50rem;
+      opacity: 0;
     }
     70% {
       top: -50rem;
+      opacity: 0;
     }
     90% {
       top: 3rem;
+      opacity: .5;
     }
     100% {
       top: 0;
+      opacity: 1;
     }
   }
   @keyframes ABOUT_TEXT {
     0% {
       top: -50rem;
+      opacity: 0;
     }
     70% {
       top: -50rem;
+      opacity: 0;
     }
     90% {
       top: 3rem;
+      opacity: .5;
     }
     100% {
       top: 0;
+      opacity: 1;
     }
   }
   #about-shell {
@@ -214,8 +233,28 @@
     min-height: 150vh;
   }
   #resume-shell .content {
+    position: relative;
     width: 50%;
     margin-left: auto;
+    z-index: 10;
+  }
+  #resume-shell .sunrise {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), url("../images/sunrise.jpg");
+    background-image: linear-gradient(white, white), url("../images/sunrise.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+    background-blend-mode: saturation;
+  }
+  #resume-shell .sunrise-cover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#ffffff00), color-stop(65%, #ffffff));
+    background-image: linear-gradient(to right, #ffffff00, #ffffff 65%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
   }
   #contact-shell #contact {
     padding-top: 20vh;
@@ -384,15 +423,6 @@ a:hover {
   border-right: .3em solid transparent;
   border-bottom: 0;
   border-left: .3em solid transparent;
-}
-
-#resume-shell .sunrise {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), url("../images/profile_sunrise.png"), -webkit-gradient(linear, left top, right top, from(#ffffff00), color-stop(75%, #ffffff));
-  background-image: linear-gradient(white, white), url("../images/profile_sunrise.png"), linear-gradient(to right, #ffffff00, #ffffff 75%);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: contain;
-  background-blend-mode: saturation;
 }
 
 #contact {

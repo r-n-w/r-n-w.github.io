@@ -33,6 +33,18 @@ $banner-line-height: 3rem;
     #resume {
         padding-top: 4rem;
         min-height: 100vh;
+        .sunrise-mobile {
+            display: block;
+            width: 100%;
+            height: 80vw;
+            background-image: 
+            linear-gradient(white, white),
+            url("../images/sunrise.jpg");
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-size: contain;;
+            background-blend-mode: saturation;
+        }
     }
     #contact {
         padding-top: 4rem;
@@ -70,10 +82,10 @@ $banner-line-height: 3rem;
         100% {opacity: 1;transform: scale(1) translateX(0px);}
     }
     @keyframes ABOUT_TEXT {
-        0% {top: -50rem;}
-        70% {top: -50rem;}
-        90% {top: 3rem;}
-        100% {top: 0;}
+        0% {top: -50rem; opacity: 0;}
+        70% {top: -50rem; opacity: 0}
+        90% {top: 3rem; opacity: .5}
+        100% {top: 0; opacity: 1}
     }
 
 
@@ -146,13 +158,36 @@ $banner-line-height: 3rem;
 
     #resume-shell {
         #resume {
+        
             padding-top: 10vh;
             min-height: 150vh;
         }
         .content {
+            position: relative;
             width: 50%;
             margin-left: auto;
+            z-index: 10;
         }
+        .sunrise {
+            background-image: 
+            linear-gradient(white, white),
+            url("../images/sunrise.jpg");
+            // linear-gradient(to right, #ffffff00, #ffffff 75%);
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-size: contain;;
+            background-blend-mode: saturation;
+        }
+        .sunrise-cover {
+            background-image: linear-gradient(to right, #ffffff00, #ffffff 65%);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0; 
+            z-index: 5;
+        }
+
     }
 
     #contact-shell {
@@ -244,7 +279,6 @@ a:hover {
     color: $light;
     border: $med-dark 1px solid;
     border-radius: .5rem;
-    // margin: 10px;
     overflow: hidden;
     .description {
         position: absolute;
@@ -305,19 +339,6 @@ a:hover {
         border-bottom: 0;
         border-left: .3em solid transparent;
     }
-    .sunrise {
-        background-image: 
-        linear-gradient(white,white),
-        url("../images/profile_sunrise.png"),
-        linear-gradient(to right, #ffffff00, #ffffff 75%);
-        background-repeat: no-repeat;
-        background-position: left bottom;
-        background-size: contain;
-        background-blend-mode: saturation;
-    }
-
-
-
 }
 
 // CONTACT ------------------------------------------>
