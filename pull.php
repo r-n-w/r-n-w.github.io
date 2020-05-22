@@ -5,4 +5,5 @@ if ( $_POST['payload'] ) {
 shell_exec( ‘cd /home4/ryannath/auto_website.git' && 'git pull origin master' );
 }
 
+
 ?>hi
