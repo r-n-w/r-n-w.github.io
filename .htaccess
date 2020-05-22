@@ -7,4 +7,4 @@ DirectoryIndex under_construction.html
             # enable directory browsing
             Options All +Indexes
 
-redirect index.html under_construction.html
+Redirect /index.html /under_construction.html
