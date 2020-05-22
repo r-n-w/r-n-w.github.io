@@ -1,10 +1,5 @@
 DirectoryIndex under_construction.html
+Redirect /index.html /under_construction.html
 
 # disable directory browsing
-            
-            Options ExecCGI Includes IncludesNOEXEC SymLinksIfOwnerMatch -Indexes
-            
-            # enable directory browsing
-            Options All +Indexes
-
-Redirect /index.html /under_construction.html
+Options ExecCGI Includes IncludesNOEXEC SymLinksIfOwnerMatch -Indexes
